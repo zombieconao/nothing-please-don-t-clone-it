@@ -13,5 +13,5 @@ cd ~/bar
 ```
 3. ...
 ```
-sudo sh install.sh
+sh install.sh
 ```
