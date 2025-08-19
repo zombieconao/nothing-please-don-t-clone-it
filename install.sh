@@ -28,5 +28,7 @@ systemctl --user daemon-reload
 
 # Enable + start the timer
 systemctl --user enable --now battery-warning.timer
+systemctl --user enable battery-warning.timer
+systemctl --user start battery-warning.timer
 
 echo "✅ Battery warning service installed and running!"
