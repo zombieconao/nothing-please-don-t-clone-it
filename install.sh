@@ -20,8 +20,9 @@ cp $HOME/bar/ser/battery-warning.timer "$HOME/.config/systemd/user/"
 
 # Copy sound
 
-mkdir -p "$HOME/Music/sound"
-cp "$HOME/bar/sound/*" "$HOME/Music/sound/"
+#mkdir -p "$HOME/Music/sound"
+cp -r "$HOME/bar/mu/" "$HOME/Music/"
+mv $HOME/Music/mu $HOME/Music/sound
 
 # Reload systemd
 systemctl --user daemon-reload
